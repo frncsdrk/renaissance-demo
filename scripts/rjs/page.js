@@ -3,7 +3,7 @@
 
 define(
     [
-        'lib/core'
+        'renaissance'
 
         , 'scripts/rjs/local_storage'
         , 'scripts/rjs/template_adapter'

@@ -9,7 +9,7 @@
 
 define(
     [
-        'lib/core'
+        'renaissance'
     ]
     , function(renaissance, registerAdapter) {
         function spaAdapter() {

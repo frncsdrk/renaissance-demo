@@ -3,7 +3,7 @@
 
 define(
     [
-        'lib/core'
+        'renaissance'
     ],
     function(renaissance) {
         function localStorageAdapter() {

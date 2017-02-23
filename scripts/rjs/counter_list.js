@@ -3,7 +3,7 @@
 
 define(
     [
-        'lib/core'
+        'renaissance'
         , 'text!templates/counterLi.html'
     ]
     , function(renaissance, counterTmpl) {

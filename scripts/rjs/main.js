@@ -3,7 +3,7 @@ requirejs.config({
     baseUrl: './'
     , paths: {
         'text': 'node_modules/requirejs-text/text'
-        , 'lib': 'node_modules/renaissance/lib'
+        , 'renaissance': 'node_modules/renaissance/renaissance'
         , 'templates': 'templates'
     }
 });
