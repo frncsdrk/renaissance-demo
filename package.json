@@ -1,10 +1,15 @@
 {
   "name": "renaissance-demo",
-  "version": "0.1.0",
-  "description": "very simple demo to test renaissance functionality",
-  "main": "index.js",
+  "version": "0.2.0",
+  "description": "renaissance demo",
+  "main": "dist/app.min.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "browserify": "browserify -t babelify src/app.js -o dist/app.js",
+    "uglify": "uglifyjs dist/app.js -o dist/app.min.js --compress --mangle --source-map",
+    "build": "npm run browserify && npm run uglify",
+    "dev": "nodemon --ignore dist/ --ignore demo/ --ignore test/",
+    "test": "tape -r babel-register test/**/*.js | faucet",
+    "test:nyc": "nyc npm test"
   },
   "repository": {
     "type": "git",
@@ -12,7 +17,9 @@
   },
   "keywords": [
     "renaissance",
-    "demo"
+    "demo",
+    "component",
+    "js"
   ],
   "author": "frncsdrk",
   "license": "MIT",
@@ -21,12 +28,23 @@
   },
   "homepage": "https://github.com/frncsdrk/renaissance-demo#readme",
   "dependencies": {
-    "renaissance": "^0.3.1",
-    "requirejs": "^2.3.3",
-    "requirejs-text": "^2.0.15"
+    "babel-core": "^6.26.0",
+    "renaissance": "^0.4.1"
   },
   "devDependencies": {
-    "renaissance-test": "^0.1.0",
-    "renaissance-test-html-reporter": "^0.1.2"
+    "babel-cli": "^6.26.0",
+    "babel-minify": "^0.4.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-regenerator": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2017": "^6.24.1",
+    "babelify": "^8.0.0",
+    "browserify": "^16.1.1",
+    "faucet": "^0.0.1",
+    "nodemon": "^1.17.3",
+    "nyc": "^11.6.0",
+    "tape": "^4.9.0",
+    "tape-run": "^4.0.0",
+    "uglify-js": "^3.3.21"
   }
 }
