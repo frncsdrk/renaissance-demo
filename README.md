@@ -2,4 +2,7 @@
 very simple demo for testing renaissance functionality
 
 ## usage
-`npm install`
+
+- `yarn` - or `npm install`  
+- `npm run build`
+- open `index.html` in browser

@@ -3,6 +3,7 @@
   "version": "0.2.0",
   "description": "renaissance demo",
   "main": "dist/app.min.js",
+  "private": true,
   "scripts": {
     "browserify": "browserify -t babelify src/app.js -o dist/app.js",
     "uglify": "uglifyjs dist/app.js -o dist/app.min.js --compress --mangle --source-map",
