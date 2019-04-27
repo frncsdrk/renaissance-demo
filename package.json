@@ -5,8 +5,9 @@
   "main": "dist/app.min.js",
   "private": true,
   "scripts": {
-    "browserify": "browserify -t babelify src/app.js -o dist/app.js",
+    "browserify": "browserify src/app.js -o dist/app.js",
     "uglify": "uglifyjs dist/app.js -o dist/app.min.js --compress --mangle --source-map",
+    "typescript": "tsc",
     "build": "npm run browserify && npm run uglify",
     "dev": "nodemon --ignore dist/ --ignore demo/ --ignore test/",
     "test": "tape -r babel-register test/**/*.js | faucet",
@@ -29,23 +30,16 @@
   },
   "homepage": "https://github.com/frncsdrk/renaissance-demo#readme",
   "dependencies": {
-    "babel-core": "^6.26.0",
-    "renaissance": "^0.4.1"
+    "renaissance": "^0.6.0"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-minify": "^0.4.0",
-    "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "babel-plugin-transform-regenerator": "^6.26.0",
-    "babel-preset-env": "^1.6.1",
-    "babel-preset-es2017": "^6.24.1",
-    "babelify": "^8.0.0",
     "browserify": "^16.1.1",
     "faucet": "^0.0.1",
-    "nodemon": "^1.17.3",
-    "nyc": "^11.6.0",
+    "nodemon": "^1.18.10",
+    "nyc": "^14.1.0",
     "tape": "^4.9.0",
     "tape-run": "^4.0.0",
+    "typescript": "^3.4.5",
     "uglify-js": "^3.3.21"
   }
 }
