@@ -9,7 +9,7 @@
     "uglify": "uglifyjs dist/app.js -o dist/app.min.js --compress --mangle --source-map",
     "typescript": "tsc",
     "build": "npm run browserify && npm run uglify",
-    "dev": "nodemon --ignore dist/ --ignore demo/ --ignore test/",
+    "dev": "live-server --ignore=dist,test",
     "test": "tape -r babel-register test/**/*.js | faucet",
     "test:nyc": "nyc npm test"
   },
