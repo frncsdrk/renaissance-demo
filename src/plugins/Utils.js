@@ -50,7 +50,7 @@ class Utils {
       component.addNode(nodes[i]);
       componentArr.push(component);
     }
-    component.onInit();
+    component.init();
 
     return componentArr;
   };

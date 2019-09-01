@@ -18,8 +18,8 @@ class HelloWorld extends BrowserComponent {
     }
   }
 
-  init(component) {
-    component.render();
+  init() {
+    this.render();
   }
 }
 
