@@ -30,7 +30,7 @@
   },
   "homepage": "https://github.com/frncsdrk/renaissance-demo#readme",
   "dependencies": {
-    "renaissance": "^0.6.2"
+    "renaissance": "^0.6.6"
   },
   "devDependencies": {
     "browserify": "^16.5.0",
