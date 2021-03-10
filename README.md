@@ -5,8 +5,8 @@ very simple demo for testing renaissance functionality
 ## Requirements
 
 - live-server - `npm i -g live-server`
-## usage
+## Usage
 
-- `yarn` - or `npm install`
+- `npm install`
 - `npm run build`
-- open `index.html` in browser
+- Open `index.html` in browser
