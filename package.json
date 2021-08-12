@@ -30,15 +30,15 @@
   },
   "homepage": "https://github.com/frncsdrk/renaissance-demo#readme",
   "dependencies": {
-    "renaissance": "^0.6.15",
-    "renaissance-append-html": "^0.2.4",
+    "renaissance": "^0.6.16",
+    "renaissance-append-html": "^0.2.6",
     "@randomgoods/tap-spec": "^5.0.1"
   },
   "devDependencies": {
     "browserify": "^17.0.0",
-    "nodemon": "^2.0.7",
+    "nodemon": "^2.0.12",
     "nyc": "^15.1.0",
-    "tape": "^5.2.2",
+    "tape": "^5.3.1",
     "uglify-es": "^3.3.9"
   }
 }
