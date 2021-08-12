@@ -1,6 +1,6 @@
 {
   "name": "renaissance-demo",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "renaissance demo",
   "main": "dist/app.min.js",
   "private": true,
