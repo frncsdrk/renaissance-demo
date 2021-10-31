@@ -32,6 +32,7 @@
   "dependencies": {
     "renaissance": "^0.6.16",
     "renaissance-append-html": "^0.2.6",
+    "renaissance-spa": "^0.2.2",
     "@randomgoods/tap-spec": "^5.0.1"
   },
   "devDependencies": {
