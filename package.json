@@ -37,9 +37,9 @@
   },
   "devDependencies": {
     "browserify": "^17.0.0",
-    "nodemon": "^2.0.14",
+    "nodemon": "^2.0.15",
     "nyc": "^15.1.0",
-    "tape": "^5.3.1",
+    "tape": "^5.5.0",
     "uglify-es": "^3.3.9"
   }
 }
